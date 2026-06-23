@@ -30,10 +30,14 @@ header{
   font-size: 1.3rem;
   font-weight: 600;
   text-wrap: nowrap;
+  white-space: nowrap;
   transition: 0.3s ease-in-out;
 
 }
 
+.span{
+  color:black;
+}
 .logo:hover{
   transform: scale(1.1);
 }
@@ -175,6 +179,7 @@ section{
   font-size: 2.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  color: black;
 }
 
 .socials i:hover{
@@ -391,42 +396,43 @@ footer ul li a{
 
 }
 
-@media(max-width:600px){
+@media(max-width:600px){  
   header #menu-icon{
-    display: block;
-
+    display: block
   }
   .nav-links{
     position: absolute;
     top: 100%;
     margin-top: 1rem;
-    width: 100%;
+    width: 10rem;
     padding: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #BDD4D3;
+    background: #00000075;
     border-radius: 3rem;
     display: none;
+    justify-content: space-between;
   }
+
   .nav-links li{
     margin-top: 1.5rem;
     padding: 1rem;
+    align-items: center;
   }
-  .nav-links .active{
+  .nav-links.active{
     display: block;
   }
   header{
     padding: 1rem 5rem;
-    gap: 8rem;
 
   }
   header .logo{
     font-size: 1.5rem;
   }
   .about-container img{
-    width: 800vw;
+    width: 80vw;
   }
   .input-box input{
     padding: 0.5rem 3rem;
