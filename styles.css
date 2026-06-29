@@ -236,7 +236,7 @@ section{
 .projects-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .project-card{
@@ -244,7 +244,7 @@ section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   gap: 1.5rem;
   border: 2px solid black;
@@ -253,8 +253,28 @@ section{
   transition: 0.3s ease-in-out;
 }
 
+.card-content{
+  align-items: left;
+  text-align: left;
+}
+
+.card-content h2{
+  font-size: 20px;
+}
+.project-card h1{
+  font-size: 30px;
+}
+
+.card-content li{
+  list-style-type: disc;
+  text-align: left;
+  padding-left: -10rem;
+  margin-left: 50px;
+
+}
+
 .project-card:hover{
-  background-color: black;
+  background-color: #000000;
   color: white;
   transform: translateY(-10px)scale(1.02);
 }
@@ -325,6 +345,8 @@ footer{
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  background-color:black;
+  
 }
 
 footer ul{
@@ -335,14 +357,17 @@ footer ul{
 }
 
 footer ul li a{
-  color: black;
+  color: white;
   font-weight: 600;
 }
 
 .copyright{
   font-size: 300;
   margin-top: 2rem;
+  color: white;
 }
+
+ 
 
 /* Setting rules for smaller screens */
 
@@ -396,6 +421,8 @@ footer ul li a{
 
 }
 
+
+
 @media(max-width:600px){  
   header #menu-icon{
     display: block
@@ -416,6 +443,9 @@ footer ul li a{
     justify-content: space-between;
   }
 
+  nav:hover .nav-links{
+    display: flex;
+  }
   .nav-links li{
     margin-top: 1.5rem;
     padding: 1rem;
