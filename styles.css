@@ -35,9 +35,6 @@ header{
 
 }
 
-.span{
-  color:black;
-}
 .logo:hover{
   transform: scale(1.1);
 }
@@ -62,7 +59,7 @@ li a::before{
   top: 25px;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, #D4BCCF, #BDD4D3);
+  background: linear-gradient(to right, #D4BCCF, #3b7daa);
 }
 
 li a:hover::before{
@@ -79,12 +76,12 @@ li a:hover::before{
   cursor: pointer;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, #BDD4D3, #D4BCCF);
+  background: linear-gradient(to right, #3b7daa, #D4BCCF);
   
 }
 
 .visit-btn:hover{
-  background: linear-gradient(to right, #D4BCCF, #BDD4D3);
+  background: linear-gradient(to right, #D4BCCF, #3b7daa);
   transform: scale(1.03);
 }
 
@@ -144,7 +141,7 @@ section{
 }
 
 .info-box span{
-  background: linear-gradient(to right, #D4BCCF, #BDD4D3);
+  background: linear-gradient(to right, #D4BCCF, #3b7daa);
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -186,41 +183,6 @@ section{
   transform: scale(1.1);
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 2rem;
-}
-
-.grid-card{
-  border: 2px solid black;
-  border-radius: 3rem;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: left;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.grid-card-hover{
-  transform: scale(1.02);
-  background-color: black;
-  color: white;
-}
-
-.grid-card i{
-  font-size: 1, 5rem;
-  margin-bottom: 1rem;
-}
-
-.grid-card span{
-  font-size: 1, 5rem;
-  font-weight: 500;
-  background: blue;
-}
-
 ::-webkit-scrollbar{
   background-color: pink;
 }
@@ -232,6 +194,8 @@ section{
 ::-webkit-scrollbar-thumb{
   background: #202833;
 }
+
+/* Projects Section */
 
 .projects-grid{
   display: grid;
@@ -297,6 +261,54 @@ section{
 
 .project-card h3{
   font-size: 2rem;
+  font-weight: 500;
+}
+
+/* Skills Section */
+
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.skills-grid-card{
+  border: 2px solid black;
+  border-radius: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.skills-grid-card p{
+  font-size: 12px;
+}
+
+.skills-grid-card li{
+  list-style-type: disc;
+  text-align: left;
+  padding-left: -10rem;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.skills-grid-card:hover{
+  transform: scale(1.02);
+  background-color: black;
+  color: white;
+}
+
+.skills-grid-card i{
+  font-size: 1, 5rem;
+  margin-bottom: 1rem;
+}
+
+.skills-grid-card span{
+  font-size: 1, 5rem;
   font-weight: 500;
 }
 
