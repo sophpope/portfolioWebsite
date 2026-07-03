@@ -6,6 +6,12 @@
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
+ 
+}
+
+body{
+  background:black;
+  color: white;
 }
 
 header{
@@ -17,7 +23,7 @@ header{
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  background-color: #202833;
+  background-color: #c8cdd5;
   backdrop-filter: blur(8px);
   color: white;
   padding: 0.5rem 1.5rem;
@@ -155,7 +161,7 @@ section{
 .btn{
   border-radius: 3rem;
   padding: 0.5rem 1.5rem;
-  border: 2px solid black;
+  border: none;
   cursor: pointer;
   font-weight: 500;
   text-wrap: nowrap;
@@ -163,7 +169,7 @@ section{
 }
 
 .btn:hover{
-  background-color: black;
+  background-color: #AEAFB1;
   color: white;
 }
 
@@ -176,7 +182,7 @@ section{
   font-size: 2.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  color: black;
+  color: white;
 }
 
 .socials i:hover{
@@ -199,7 +205,7 @@ section{
 
 .projects-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 5rem;
 }
 
@@ -211,10 +217,12 @@ section{
   justify-content: space-between;
   text-align: center;
   gap: 1.5rem;
-  border: 2px solid black;
+  border: none;
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  background-color: #4e4e4e;
+  color: white;
 }
 
 .card-content{
@@ -238,8 +246,8 @@ section{
 }
 
 .project-card:hover{
-  background-color: #000000;
-  color: white;
+  background-color: #BFE8D4;
+  color: black;
   transform: translateY(-10px)scale(1.02);
 }
 
@@ -249,12 +257,10 @@ section{
 }
 
 .project-card:hover .btn{
-  border: 2px solid white;
-  color: white;
+  color: black;
 }
 
 .project-card:hover .btn:hover{
-  border: 2px solid white;
   background-color: white;
   color: black;
 }
@@ -268,24 +274,77 @@ section{
 
 .skills-grid{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 2rem;
 }
 
-.skills-grid-card{
-  border: 2px solid black;
-  border-radius: 3rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: left;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
+.section-title{
+  text-align: center;
+  font-size: 25px;
+  font-style: bold ;
 }
 
+.title{
+  font-size: 25px;
+  font-style: bold ;
+}
+
+.confidence{
+  font-style: italic;
+}
+
+.skills{
+  min-height: 100vh;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: center;
+  background-color: #BFE8D4;
+  color: white;
+}
+
+
+.skills-grid-card{
+  position: sticky;
+  top: 90px;
+  border-radius: 3rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: #4e4e4e;
+  min-height: 350px;
+
+  display: grid;
+  align-items: start;
+  grid-template-columns: 0.95fr 1.05fr ;
+  gap: 2rem;
+}
+
+.skills-grid-card img{
+  max-width: 300px;
+  border-radius: 1rem;
+  justify-self: end;
+  align-self: start;
+}
 .skills-grid-card p{
   font-size: 12px;
+}
+
+.skills-grid-card li.title{
+  list-style-type: none;
+  text-align: left;
+  padding-left: -10rem;
+  margin-left: 0px;
+  font-size: 15px;
+  font-style: bold;
+}
+
+.skills-grid-card li.confidence{
+  list-style: none;
+  text-align: left;
+  font-style: italic;
+  margin-left: 5px;
 }
 
 .skills-grid-card li{
@@ -296,9 +355,11 @@ section{
   font-size: 15px;
 }
 
+
+
 .skills-grid-card:hover{
   transform: scale(1.02);
-  background-color: black;
+  background-color: #a7c7ff;
   color: white;
 }
 
