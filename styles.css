@@ -201,6 +201,50 @@ section{
   background: #202833;
 }
 
+/* About Me Section */
+
+.about-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto-fit, minmax(200px, 1fr);
+  gap: 2rem;
+}
+
+.about-card{
+  position: sticky;
+  top: 90px;
+  border-radius: 3rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: #4e4e4e;
+  min-height: 150px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-card.active{
+  background: #BDD4D3;
+  color: #455251;
+  transform: scale(1.02);
+}
+
+.about-me{
+  min-height: 100vh;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  color: white;
+}
+
+.text{
+  text-align: center;
+}
+
+
+
 /* Projects Section */
 
 .projects-grid{
@@ -287,6 +331,7 @@ section{
 .title{
   font-size: 25px;
   font-style: bold ;
+  text-align: center;
 }
 
 .confidence{
@@ -319,6 +364,13 @@ section{
   align-items: start;
   grid-template-columns: 0.95fr 1.05fr ;
   gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skills-grid-card.active{
+  background: #e99af0;
+  color: #455251;
+  transform: scale(1.02);
 }
 
 .skills-grid-card img{
@@ -355,13 +407,6 @@ section{
   font-size: 15px;
 }
 
-
-
-.skills-grid-card:hover{
-  transform: scale(1.02);
-  background-color: #a7c7ff;
-  color: white;
-}
 
 .skills-grid-card i{
   font-size: 1, 5rem;
