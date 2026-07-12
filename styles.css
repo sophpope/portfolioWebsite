@@ -8,6 +8,10 @@
   list-style: none;
  
 }
+/* Removing the purple links */
+a{
+  color: white
+}
 
 body{
   background:black;
@@ -23,7 +27,7 @@ header{
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  background-color: #c8cdd5;
+  background-color: #4e4e4e;
   backdrop-filter: blur(8px);
   color: white;
   padding: 0.5rem 1.5rem;
@@ -212,34 +216,73 @@ section{
 
 .about-card{
   position: sticky;
-  top: 90px;
+  top: 150px;
   border-radius: 3rem;
   padding: 2rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   background-color: #4e4e4e;
-  min-height: 150px;
-  align-items: center;
-  text-align: center;
+  min-height: 200px;
   margin-bottom: 2rem;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 0.2fr 1.05fr;
+
 }
 
-.about-card.active{
+.about-card.card-one.active{
   background: #BDD4D3;
   color: #455251;
   transform: scale(1.02);
+}
+
+.about-card.card-two.active{
+  background: #b381cc;
+  color: #455251;
+  transform: scale(1.02);
+}
+
+.about-card.card-three.active{
+  background: #edbc7c;
+  color: #455251;
+  transform: scale(1.02);
+}
+
+.about-card.card-four.active{
+  background: #a5f48b;
+  color: #455251;
+  transform: scale(1.02);
+}
+
+.about-card.card-five.active{
+  background: #61a296;
+  color: #455251;
+  transform: scale(1.02);
+}
+
+.about-text{
+  text-align: left;
+  grid-column: 2;
+  grid-row: 1;
+}
+.about-icon{
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 4rem;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .about-me{
   min-height: 100vh;
   padding: 5rem;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 3rem;
   color: white;
 }
 
-.text{
+#intro{
   text-align: center;
 }
 
@@ -352,7 +395,7 @@ section{
 
 .skills-grid-card{
   position: sticky;
-  top: 90px;
+  top: 150px;
   border-radius: 3rem;
   padding: 2rem;
   cursor: pointer;
@@ -483,6 +526,49 @@ footer ul li a{
   font-size: 300;
   margin-top: 2rem;
   color: white;
+}
+
+/* Demo Videos */
+
+.return-home{
+  display: inline-block;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: white;
+
+}
+  
+.return-home i:hover{
+  transform: scale(1.1);
+}
+
+.video{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.video video{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.demo-video{
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 5rem;
+}
+
+.github{
+  display: inline-block;
+  padding: 5rem;
+  font-size: 2rem;
+
+
 }
 
  
