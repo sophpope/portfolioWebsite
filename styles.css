@@ -33,6 +33,7 @@ header{
   padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   z-index: 1000;
+  
 }
 
 .logo{
@@ -42,6 +43,10 @@ header{
   text-wrap: nowrap;
   white-space: nowrap;
   transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
 
 }
 
@@ -51,7 +56,10 @@ header{
 
 .nav-links{
   display: flex;
-  gap:2rem;
+  gap:2rem; 
+  align-items: center;
+  justify-content: center;
+  min-height: 50px; 
 }
 
 li a{
@@ -160,6 +168,10 @@ section{
 .btn-group{
   display: flex;
   gap: 1rem;
+  grid-area: buttons;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .btn{
@@ -170,6 +182,9 @@ section{
   font-weight: 500;
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover{
@@ -290,31 +305,63 @@ section{
 
 /* Projects Section */
 
-.projects-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 5rem;
-}
 
-.project-card{
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  gap: 1.5rem;
-  border: none;
-  border-radius: 3rem;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  background-color: #4e4e4e;
+.projects{
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem;
+  background-color: #BFE8D4;
   color: white;
 }
 
-.card-content{
-  align-items: left;
-  text-align: left;
+.projects-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-card{
+  position: sticky;
+  top: 150px;
+  border-radius: 3rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: #4e4e4e;
+  min-height: 350px;
+
+  display: grid;
+  align-items: start;
+  grid-template-columns: 0.95fr 1.05fr;
+  grid-template-rows: 1fr auto;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  grid-template-areas: "text image" "buttons buttons";
+}
+
+.project-card.active{
+  background: rgb(77, 167, 219);
+  color: black;
+  transform: scale(1.02);
+}
+
+.project-text{
+  grid-area: text;
+  min-width: 0;
+}
+
+.header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.header h1{
+  max-width: 700px;
+  margin: 0;
 }
 
 .card-content h2{
@@ -331,7 +378,16 @@ section{
   margin-left: 50px;
 
 }
-
+.project-card img{
+  max-width: 500px;
+  border-radius: 1rem;
+  border: black;
+  object-fit: cover;
+  justify-self: end;
+  align-self: start;
+  grid-area: image;
+}
+/*
 .project-card:hover{
   background-color: #BFE8D4;
   color: black;
@@ -356,14 +412,9 @@ section{
   font-size: 2rem;
   font-weight: 500;
 }
+*/
 
 /* Skills Section */
-
-.skills-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 2rem;
-}
 
 .section-title{
   text-align: center;
@@ -550,7 +601,7 @@ footer ul li a{
   overflow: hidden;
 }
 
-.video video{
+.video iframe{
   width: 100%;
   height: 100%;
   object-fit: contain;

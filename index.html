@@ -21,7 +21,7 @@
       
       <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-      <a href="https://github.com/sophpope">
+      <a href="https://github.com/sophpope" target="_blank">
         <button class="visit-btn">Visit Github</button>
       </a>
     </header>
@@ -43,11 +43,11 @@
           </div>
 
           <div class="socials">
-            <a href="https://github.com/sophpope">
+            <a href="https://github.com/sophpope" target="_blank">
               <i class="fa-brands fa-square-github"></i>
             </a>
             
-            <a href="https://linkedin.com/in/sophie-pope-9448012b9">
+            <a href="https://linkedin.com/in/sophie-pope-9448012b9" target="_blank">
               <i class="fa-brands fa-square-linkedin"></i>
             </a>
             
@@ -108,7 +108,7 @@
           <div class="about-card card-five">
             <div class="about-text">
             <h3>Beyond Coding</h3><br>
-            <p id="intrests" class="text">Outside of coding I enjoy travelling, cooking and keeping active. I enjoy tackling new challenges whether that's a difficult boulder or aerial move, planning a trip or experimenting with a new recipe.</p>
+            <p id="intrests" class="text">Outside of coding I enjoy travelling, cooking and keeping active. I love tackling new challenges whether that's a difficult boulder or aerial move, planning a trip or experimenting with a new recipe.</p>
             </div>
             <div class="about-icon"><i class="fa-solid fa-earth-europe"></i></div>
           </div>
@@ -123,42 +123,108 @@
 
       <div class="projects-grid">
         <div class="project-card">
-          <img src="prj1" alt="">
-          <h1>Finance Tracker Project</h1>
+          <div class="project-text">
+            <h1>Finance Tracker Project</h1>
+            
+            <div class="card-content">
+              <h2>Tech Stack</h2>
+              <ul>
+                <li>Python</li>
+                <li>PostgreSQL</li>
+                <li>OOP</li>
+              </ul><br>
+          
+              <h2>Description</h2>
+              <p>A personal finance management application, allowing users to track income, expenses and set monthly budgets</p><br>
+              <h2>Features:</h2>
+                <ul>
+                  <li>Expense and income tracking</li>
+                  <li>Budget management</li>
+                  <li>Monthly reporting</li>
+                  <li>PostgreSQL database integration</li>
+                  <li>Input validation and error handling</li>
+                </ul>
+            </div>
+          </div>  
+          
+          <img src="images/projects/finance.jpg" alt="finance-image">
+
+          <div class="btn-group">
+            <a class="btn" href="finance-tracker-demo.html">Live Demo</a>
+            <a class="btn" href="https://github.com/sophpope/Finance_Tracker.git" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h1>Time Tracker Project</h1>
           
           <div class="card-content">
             <h2>Tech Stack</h2>
             <ul>
               <li>Python</li>
-              <li>PostgreSQL</li>
+              <li>MySQL</li>
               <li>OOP</li>
           </ul><br>
         
           <h2>Description</h2>
-          <p>A personal finance management application, allowing users to track income, expenses and set monthly budgets</p><br>
+          <p>A Python-based productivity tool that automatically tracks your current active applications and browser tabs, recording how long you spend on each task. Session data is stored in a PostgreSQL database, providing an active history of your activity and making it easier to analyse how your time is spent across projects. </p><br>
           <h2>Features:</h2>
             <ul>
-              <li>Expense and income tracking</li>
-              <li>Budget management</li>
-              <li>Monthly reporting</li>
+              <li>Automatic activity tracking</li>
+              <li>Automatic session timing</li>
+              <li>Detects  application and tab changes</li>
               <li>PostgreSQL database integration</li>
-              <li>Input validation and error handling</li>
+              <li>Session history logging</li>
+              <li>Object-orianted Python design</li>
             </ul>
           </div>  
-            
+
+          <img src="images/projects/time.jpg" alt="time-image">
+
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <a href="time_tracker_demo.html"><div class="btn">GitHub Repo</div></a>
+            <a class="btn" href="time_tracker_demo.html">Live Demo</a>
+            <a class="btn" href="https://github.com/sophpope/time_tracker.git" target="_blank">GitHub Repo</a>
           </div>
         </div>
 
         <div class="project-card">
-          <img src="prj2" alt="">
+          <div class="header">
+          <img src="images/projects/fitness.png" alt="fitness-image">
           <h3>Fitness App Project</h3>
-          <p>This is my fitness app project ...</p>
-          <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">GitHub Repo</div>
+          </div>
+          <div class="card-content">
+            <h2>Tech Stack</h2>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Expo</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>SQL Model</li>
+              <li>Uvicorn</li>
+            </ul><br>
+            <h2>Description</h2>
+            <p>This project is currently a work in progress...
+              It is a full-stack fitness tracker that I am currently developing to improve my frontend development skills.
+
+              The frontend is build with React and Expo, while FastAPI is used to create the backend API. 
+              Exercise and user data are stored in a postgreSQL database with SQL models used to structure and manage the data. 
+            </p><br>
+            <h2>Current Features</h2>
+            <ul>
+              <li>FastAPI backend with interactive API documentation</li>
+              <li>PostgreSQL database connection</li>
+              <li>SQL models for users, exercise, PRs & workouts</li>
+              <li>GET requests for retrieving stored data </li>
+              <li>POST requests for adding new users, exercises, workouts & PRs </li>
+              <li>Mobile/Web frontend through Expo</li>
+            </ul>
+            <br>
+            <div class="btn-group">
+              <a href="fitness-app-demo.html"><div class="btn">Live Demo</div></a>
+              <a href="https://github.com/sophpope/Workouts.git" target="_blank"><div class="btn">GitHub Repo</div></a>
+            </div>
           </div>
         </div>
 
@@ -208,7 +274,7 @@
               <li>Pytest (Learning)</li>
             </ul><br>
           </div>
-          <img src="images/python.png" alt="python-logo"/>
+          <img src="images/skills/python.png" alt="python-logo"/>
         </div>
 
 
@@ -227,14 +293,14 @@
               <li>Database Normalisation</li>
             </ul><br>
           </div>
-          <img src="images/sql.png" alt="database-icon"/>
+          <img src="images/skills/sql.png" alt="database-icon"/>
         </div>
 
 
         <div class="skills-grid-card">
           <div class="skills-text">
             <span class="title"><i class="fa-brands fa-html5"></i> HTML ★★★★☆</span>
-            <p class="confidence">Intermediate</p><br>
+            <p class="confidence">Advanced Beginner</p><br>
             <p>Comfortable building simple webpages from scratch. <br> Focusing on creating clean, accessible layouts that integrate wiht CSS and Javascript.</p><br>
             <ul>
               <li>HTML Layout</li>
@@ -245,13 +311,13 @@
               <li>Links</li>
             </ul><br>
           </div>
-          <img src="images/html.png" alt="html-logo">
+          <img src="images/skills/html.png" alt="html-logo">
         </div>
 
         <div class="skills-grid-card">
           <div class="skills-text">
             <span class="title"><i class="fa-brands fa-css"></i> CSS ★★★☆☆</span>
-            <p class="confidence">Intermediate</p><br>
+            <p class="confidence">Advanced Beginner</p><br>
             <p>Developing responsive, modern interfaces. Increasingly confident styling HTML elements and building my familiarity with CSS. </p><br>
             <ul>
               <li>CSS Grid</li>
@@ -259,7 +325,7 @@
               <li>Gradients</li>
             </ul><br>
           </div>
-          <img src="images/CSS.png" alt="css-icon"/>
+          <img src="images/skills/CSS.png" alt="css-icon"/>
         </div>
 
         <div class="skills-grid-card">
@@ -273,7 +339,7 @@
               <li>Fetch API (Learning)</li>
             </ul><br>
           </div>
-          <img src="images/javascript.png" alt="javascript-logo" >
+          <img src="images/skills/javascript.png" alt="javascript-logo" >
         </div>
 
         <div class="skills-grid-card">
@@ -292,7 +358,7 @@
               <li>Currently learning more frontend technologies</li>
             </ul><br>
           </div>
-          <img src="images/frameworks.png" alt="framework-logos">
+          <img src="images/skills/frameworks.png" alt="framework-logos">
         </div>
           
       </div>
