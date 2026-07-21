@@ -185,11 +185,12 @@ section{
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  background-color: #4e4e4e;
 }
 
 .btn:hover{
-  background-color: #AEAFB1;
-  color: white;
+  background-color: #E7E7E5;
+  color: #4e4e4e;
 }
 
 .socials{
@@ -340,8 +341,6 @@ section{
 }
 
 .project-card.active{
-  background: rgb(181, 227, 253);
-  color: black;
   transform: scale(1.02);
 }
 
@@ -355,6 +354,7 @@ section{
 }
 .project-card h1{
   font-size: 30px;
+  font-style: bold;
 }
 
 .card-content li{
@@ -368,7 +368,8 @@ section{
 .list{
   border-radius: 3rem;
   padding: 0.5rem 1.5rem;
-  background-color: pink;
+  background-color: #E7E7E5;
+  color: #455251;
 }
 
 .stack{
@@ -380,6 +381,7 @@ section{
 }
 
 .project-card img{
+  width: 100%;
   max-width: 500px;
   max-height: 500px;
   border-radius: 1rem;
@@ -388,8 +390,26 @@ section{
   justify-self: end;
   align-self: start;
   grid-area: image;
-  display: flex;
-  flex-wrap: wrap;
+}
+
+#finance{
+  background-color: #F7B2BD;
+  color: #7A1F35;
+}
+
+#time{
+  background-color: #BFE8D4;
+  color: #145A43;
+}
+
+#fitness{
+  background-color: #BFD7FF;
+  color: #244A85;
+}
+
+#portfolio{
+  background-color: #E6C8FF;
+  color: #63358A;
 }
 
 
