@@ -310,7 +310,6 @@ section{
   width: 100%;
   min-height: 100vh;
   padding: 5rem;
-  background-color: #BFE8D4;
   color: white;
 }
 
@@ -329,7 +328,7 @@ section{
   cursor: pointer;
   transition: 0.2s ease-in-out;
   background-color: #4e4e4e;
-  min-height: 350px;
+  min-height: 500px;
 
   display: grid;
   align-items: start;
@@ -341,7 +340,7 @@ section{
 }
 
 .project-card.active{
-  background: rgb(77, 167, 219);
+  background: rgb(181, 227, 253);
   color: black;
   transform: scale(1.02);
 }
@@ -349,19 +348,6 @@ section{
 .project-text{
   grid-area: text;
   min-width: 0;
-}
-
-.header{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-.header h1{
-  max-width: 700px;
-  margin: 0;
 }
 
 .card-content h2{
@@ -378,41 +364,34 @@ section{
   margin-left: 50px;
 
 }
+
+.list{
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  background-color: pink;
+}
+
+.stack{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .project-card img{
   max-width: 500px;
+  max-height: 500px;
   border-radius: 1rem;
   border: black;
   object-fit: cover;
   justify-self: end;
   align-self: start;
   grid-area: image;
-}
-/*
-.project-card:hover{
-  background-color: #BFE8D4;
-  color: black;
-  transform: translateY(-10px)scale(1.02);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.project-card img{
-  width: 20vw;
-  border-radius: 1rem;
-}
-
-.project-card:hover .btn{
-  color: black;
-}
-
-.project-card:hover .btn:hover{
-  background-color: white;
-  color: black;
-}
-
-.project-card h3{
-  font-size: 2rem;
-  font-weight: 500;
-}
-*/
 
 /* Skills Section */
 
