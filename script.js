@@ -5,7 +5,7 @@ menuIcon.onclick = () => {
     navLinks.classList.toggle('active');
 }
 
-const aboutCards = document.querySelectorAll(".about-card, .skills-grid-card")
+const aboutCards = document.querySelectorAll(".about-card, .skills-grid-card, .project-card")
 
 function highlightTopCard(){
     aboutCards.forEach((card) => {
