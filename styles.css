@@ -413,6 +413,8 @@ section{
 }
 
 
+
+
 /* Skills Section */
 
 .section-title{
@@ -461,7 +463,7 @@ section{
 }
 
 .skills-grid-card.active{
-  background: #e99af0;
+  background: #c4e3e7;
   color: #455251;
   transform: scale(1.02);
 }
