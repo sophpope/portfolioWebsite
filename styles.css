@@ -338,6 +338,8 @@ section{
   gap: 2rem;
   margin-bottom: 2rem;
   grid-template-areas: "text image" "buttons buttons";
+  border-style: solid;
+  border-width: 7px;
 }
 
 .project-card.active{
@@ -395,6 +397,7 @@ section{
 #finance{
   background-color: #F7B2BD;
   color: #7A1F35;
+  border-color:#7A1F35; 
 }
 
 #time{
@@ -460,11 +463,13 @@ section{
   grid-template-columns: 0.95fr 1.05fr ;
   gap: 2rem;
   margin-bottom: 2rem;
+  border-style: solid;
+  border-width: 7px;
 }
 
 .skills-grid-card.active{
   background: #c4e3e7;
-  color: #455251;
+  color: #155e63;
   transform: scale(1.02);
 }
 
