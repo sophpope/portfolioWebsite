@@ -220,7 +220,36 @@ section{
 ::-webkit-scrollbar-thumb{
   background: #202833;
 }
+/* Card Carousel */
 
+.carousel{
+  width:100%;
+  overflow-x: auto;
+  margin: 3em auto;
+  display: flex;
+  gap: 1em;
+}
+
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel::scroll-button(right){
+  content: right;
+  border: none;
+  background-color: white;
+
+}
+
+.card{
+  flex: 0 0 20em;
+  height: 12em;
+  background-color: white;
+  padding: 1em;
+  border-radius: .5em;
+  text-align: center;
+  align-content: center;
+}
 /* About Me Section */
 
 .about-grid{
