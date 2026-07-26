@@ -426,7 +426,6 @@ section{
 #finance{
   background-color: #F7B2BD;
   color: #7A1F35;
-  border-color:#7A1F35; 
 }
 
 #time{
@@ -439,11 +438,20 @@ section{
   color: #244A85;
 }
 
-#portfolio{
+#astro{
   background-color: #E6C8FF;
   color: #63358A;
 }
 
+#portfolio{
+  background-color: #c7d2fe;
+  color: #3730a3;
+}
+
+#anime{
+  background-color: #d9d9d9;
+  color: #3f3f46;
+}
 
 
 
