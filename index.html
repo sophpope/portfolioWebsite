@@ -29,7 +29,11 @@
 
     <section id="about" class="about">
       <div class="about-container">
-        <img src="img.jpg" alt="">
+        <div class="image-container">
+          <img src="images/about-me/professional.jpeg" alt="portfolio-photo" class="image-normal">
+          <img src="images/about-me/smiling.jpeg" alt="" class="image-hover">
+        </div>
+        
 
         <div class="info-box">
           <div class="text">
@@ -63,6 +67,9 @@
 
         <div class="about-info">
 
+          <p id="intro" class="text">I am an aspiring software developer with a passion for building practical applications that solve real problems. <br> 
+            My strongest language is Python, and I am currently expanding my frontend skills with Javascript while continuing to create projects to deepen my understanding of software development.</p><br>
+
           <div class="carousel">
 
             <div class="card">Card 1</div>
@@ -76,9 +83,7 @@
 
 
           </div>
-          
-          <p id="intro" class="text">I am an aspiring software developer with a passion for building practical applications that solve real problems. <br> 
-          My strongest language is Python, and I am currently expanding my frontend skills with Javascript while continuing to create projects to deepen my understanding of software development.</p><br>
+        
         
           <h2 class="title">My Journey</h2><br>
 
@@ -303,7 +308,7 @@
             </div>
           </div>
 
-          <img src="?" alt="portfolio">
+          <img src="images/projects/portfolio-web.png" alt="portfolio">
 
           <div class="btn-group">
             <div class="btn">Live Demo</div>
@@ -317,7 +322,7 @@
 
     <section id="skills" class="skills-stack">
       <h3 class="section-title">Skills</h3>
-      <p class="section-title">Skills I've learnt along my journey...</p><br>
+      <p class="title">Skills I've learnt along my journey...</p><br>
 
       <div class="skills-info">
         <div class="skills-grid-card">
@@ -434,28 +439,36 @@
     
 
     <section class="contact" id="contact">
+      
       <div class="input-box">
-
         <h2 class="section-title">Contact Me</h2>
-        <div class="input">
-          <input type="text" placeholder="example@email.com">
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div class="btn">Submit</div>
+        <form action="https://formspree.io/f/mgogrnad" method="POST">
+          <label>
+            Name:
+            <input type="name" name="name">
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label> 
+          <button class="form-btn" type="submit">Submit</button>
+        </form>
       </div>
     </section>
 
     <footer>
 
       <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
 
-        <li>
-          <a href="#projects">Projects</a>
-
-        </li>
+        
       </ul>
       <p class="copyright">© All Rights Reserved | Sophie Pope</p>
     </footer>
