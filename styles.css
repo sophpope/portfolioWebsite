@@ -146,17 +146,7 @@ section{
   border-radius: 50%;
 }
 
-.image-hover{
-  opacity: 0;
-}
 
-.image-container:hover .image-normal{
-  opacity: 0;
-}
-
-.image-container:hover .image-hover{
-  opacity: 1;
-}
 
 .info-box{
   display: flex;
@@ -243,41 +233,90 @@ section{
 }
 /* Card Carousel */
 
+.carousel-wrapper{
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
 .carousel{
   width:100%;
   overflow-x: auto;
   margin: 3em auto;
   display: flex;
   gap: 1em;
+  scroll-behavior: smooth;
+  min-width: 0;
+  overflow-y: hidden;
+  scrollbar-width: none;
 }
 
 .carousel::-webkit-scrollbar{
   display: none;
 }
 
-.carousel::scroll-button(right){
-  content: right;
-  border: none;
-  background-color: white;
-
-}
-
-.card{
+.carousel img.card{
   flex: 0 0 20em;
+  min-width: 20em;
+  max-width: 20em;
   height: 12em;
   background-color: white;
-  padding: 1em;
   border-radius: .5em;
-  text-align: center;
   align-content: center;
+  object-fit: cover;
+  display: block;
 }
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+  color: black;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.right-arrow:hover{
+  background-color: white;
+  opacity: 1;
+}
+
+.left-arrow:hover{
+  background-color: white;
+  opacity: 1;
+}
+
+.left-arrow{
+  left: 0.5rem;
+}
+
+.right-arrow{
+  right: 0.5rem;
+}
+
 /* About Me Section */
 
 .about-grid{
   width: 100%;
+  min-width: 0;
   display: grid;
-  grid-template-columns: auto-fit, minmax(200px, 1fr);
+  grid-template-columns: auto-fit, minmax(0, 1fr);
   gap: 2rem;
+}
+
+.about-info{
+  width: 100%;
+  min-width: 0;
 }
 
 .about-card{
@@ -340,7 +379,9 @@ section{
   grid-row: 1;
 }
 
-.about-me{
+.about-me {
+  width: 100%;
+  min-width: 0;
   min-height: 100vh;
   padding: 5rem;
   display: grid;
@@ -576,6 +617,12 @@ section{
   font-weight: 500;
 }
 
+/* Contact Form */
+
+.input-box h2{
+  padding-top: 30px;
+}
+
 .input-box{
   background-color: #F6D9F8;
   border-radius: 2rem;
@@ -593,9 +640,8 @@ form{
   justify-content: center;
   text-align: center;
   gap: 2rem;
-  margin-top: 5rem;
   border-radius: 3rem;
-  padding: 2rem 8rem;
+  padding: 2rem;
   
 }
 
@@ -607,6 +653,7 @@ input{
   border-width: 2px;
   border-style: solid;
   border-color: #8B3F8F;
+  padding: 5px;
 }
 
 textarea{
@@ -617,13 +664,13 @@ textarea{
   border-width: 2px;
   border-style: solid;
   border-color: #8B3F8F;
+  padding: 5px;
 }
 
 label{
   font-size: 20px;
   font-weight: bold;
   text-align: left;
-
 }
 
 .form-btn{
@@ -812,6 +859,7 @@ footer ul li a{
   header .logo{
     font-size: 1.5rem;
   }
+
   .about-container img{
     width: 80vw;
   }

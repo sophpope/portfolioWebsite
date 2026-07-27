@@ -1,3 +1,4 @@
+// Card Scroll animation
 const menuIcon = document.querySelector('#menu-icon');
 const navLinks = document.querySelector('.nav-links');
 
@@ -21,3 +22,31 @@ function highlightTopCard(){
 }
 
 window.addEventListener("scroll", highlightTopCard);
+
+
+
+// Carousel Animation
+const carousel = document.querySelector(".carousel");
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+
+function getScrollAmount() {
+const card = carousel.querySelector(".card");
+const gap = parseFloat(getComputedStyle(carousel).gap) || 0;
+
+return card.getBoundingClientRect().width + gap;
+}
+
+leftArrow.addEventListener("click", () => {
+carousel.scrollBy({
+    left: -getScrollAmount(),
+    behavior: "smooth"
+});
+});
+
+rightArrow.addEventListener("click", () => {
+carousel.scrollBy({
+    left: getScrollAmount(),
+    behavior: "smooth"
+});
+});
