@@ -403,7 +403,7 @@ section{
 .projects{
   width: 100%;
   min-height: 100vh;
-  padding: 5rem;
+  padding: 2rem;
   color: white;
 }
 
@@ -790,8 +790,36 @@ footer ul li a{
     font-size: 2.5rem;
   }
   
+  
 }
 
+@media(max-width:950px){
+  .project-card img{
+    width: 100%;
+    max-width:100%;
+    justify-self: center;
+  }
+
+  .project-card{
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 
+    "image"
+    "text"
+    "buttons";
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .projects{
+    padding: 1rem;
+  }
+}
 @media(max-width:768px){
   header{
     gap: 1rem;
@@ -830,31 +858,12 @@ footer ul li a{
     width: 100%;
     
   }
-  .project-card{
-    position: relative;
-    top: auto;
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: 
-    "image"
-    "text"
-    "buttons";
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
-  }
+  
   .project-card img{
     width: 100%;
     max-width:100%;
     justify-self: center;
   }
-
-  .projects{
-    padding: 1rem;
-  }
-  
   .about-card{
     position: relative;
     top: auto;
