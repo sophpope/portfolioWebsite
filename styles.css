@@ -820,10 +820,8 @@ footer ul li a{
   }
   
   .image-container{
-    width: 250px;
-    height: 290px;
+    justify-content: center;
   }
-  
   .grid{
     grid-template-columns: repeat(1,1fr);
   }
