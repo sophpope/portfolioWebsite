@@ -795,39 +795,57 @@ footer ul li a{
 @media(max-width:768px){
   header{
     gap: 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
   }
+
   header .logo{
     font-size: 1rem;
   }
   header .visit-btn{
     display: none;
   }
-  .about-container{
+  .about .about-container{
+    width: 100%;
     flex-direction:column;
+    padding: 0.5rem;
   }
-  .input-box input{
-    padding: 1rem 2rem;
-    font-size: 1.8rem;
+
+  .about-me{
+    padding: 1rem;
   }
-  .input-box input::placeholder{
-    font-size: 1.5rem;
+
+  .about-icon{
+    padding-right: 0.5rem;
+    padding-left:0;
   }
-  .input-box i{
-    display: none;
+  
+  .image-container{
+    width: 250px;
+    height: 290px;
   }
+  
   .grid{
     grid-template-columns: repeat(1,1fr);
   }
   section{
     padding: 6rem 1.5rem;
+    width: 100%;
+    
   }
   .project-card{
-    grid-template-columns: 1fr;
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas: 
     "image"
     "text"
     "buttons";
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
   }
   .project-card img{
     width: 100%;
@@ -835,24 +853,41 @@ footer ul li a{
     justify-self: center;
   }
 
-  .about-container{
-    flex-direction: column;
-    text-align: center;
+  .projects{
+    padding: 1rem;
   }
+  
+  .about-card{
+    position: relative;
+    top: auto;
+    width: 100%;
+
+  }
+  
   .skills-grid-card{
+    position: relative;
     grid-template-columns: 1fr;
     text-align: center;
+    align-items: center;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 
+    "text"
+    "image";
   }
-
   .skills-grid-card img{
     justify-self: center;
+    width: 90%;
+  }
+  .input-box{
+    padding: 1rem;
+  }
+  form{
+    padding: 0;
   }
 
-  .carousel img.card{
-    width: 16rem;
-    min-width: 16rem;
-    height: auto;
-  }
+
 }
 
 
