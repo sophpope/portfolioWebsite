@@ -816,6 +816,11 @@ footer ul li a{
     justify-content: center;
     text-align: center;
   }
+
+  .card-content li{
+    justify-content: center;
+    text-align: center;
+  }
   
   .projects{
     padding: 1rem;
